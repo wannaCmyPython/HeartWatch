@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fCM-Qn-Sb7">
+    <device id="watch40" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Select Controller Scene-->
+        <scene sceneID="9hY-mP-OFS">
+            <objects>
+                <controller identifier="SelectController" id="fCM-Qn-Sb7" userLabel="Select Controller Scene" customClass="SelectController" customModule="CprAid_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Adult CPR" id="UUd-uV-G11">
+                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="uxL-ob-Mur" kind="push" identifier="AdultCPR" id="KSC-P1-nUr"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Child CPR" id="4vA-k0-oPv" userLabel="ChildCPR">
+                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="uxL-ob-Mur" kind="push" identifier="ChildCPR" id="eYk-TB-R0C"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-101" y="331"/>
+        </scene>
+        <!--Tutorial Controller-->
+        <scene sceneID="CY1-n7-DXk">
+            <objects>
+                <controller identifier="TutorialController" id="uxL-ob-Mur" userLabel="Tutorial Controller" customClass="TutorialController" customModule="CprAid_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="EVs-VF-h6Y">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Begin CPR" id="wnX-zO-r3t">
+                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cprPressed" destination="uxL-ob-Mur" id="Af9-oX-IXP"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="cprButton" destination="wnX-zO-r3t" id="Brb-3C-Fai"/>
+                        <outlet property="tutorialLabel" destination="EVs-VF-h6Y" id="eIo-7c-mhU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="146" y="331"/>
+        </scene>
+        <!--Compressions Controller Scene-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="CompressionController" id="AgC-eL-Hgc" userLabel="Compressions Controller Scene" customClass="CompressionController" customModule="CprAid_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Depth: --" id="3re-8g-055">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <imageView height="0.29999999999999999" alignment="left" image="red" id="85w-j4-qVe"/>
+                        <label alignment="left" text="Pace: --" id="66x-DU-Med">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <imageView height="0.29999999999999999" alignment="left" image="red" id="QLh-T4-b7G"/>
+                    </items>
+                    <connections>
+                        <outlet property="depthColor" destination="85w-j4-qVe" id="nfh-0p-Amx"/>
+                        <outlet property="depthLabel" destination="3re-8g-055" id="nVs-Nl-rhv"/>
+                        <outlet property="paceColor" destination="QLh-T4-b7G" id="dZG-8k-hPM"/>
+                        <outlet property="paceLabel" destination="66x-DU-Med" id="8Gw-xq-OWa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="385" y="331"/>
+        </scene>
+        <!--Breath Controller-->
+        <scene sceneID="7GU-GS-mXf">
+            <objects>
+                <controller identifier="BreathController" id="VAc-5Q-sA5" userLabel="Breath Controller" customClass="BreathController" customModule="CprAid_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Exhale" id="ZRq-H8-aar">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <activity alignment="left" id="A5e-2z-zag"/>
+                    </items>
+                    <connections>
+                        <outlet property="breathLabel" destination="ZRq-H8-aar" id="ujT-8e-VDa"/>
+                        <outlet property="breathRing" destination="A5e-2z-zag" id="f43-Qq-1vY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="600" y="340"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KSC-P1-nUr"/>
+    </inferredMetricsTieBreakers>
+</document>

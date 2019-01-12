@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF31960521A1301700BC9D46 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3195FD21A12F0000BC9D46 /* Charts.framework */; };
+		BF31960621A1301700BC9D46 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF3195FD21A12F0000BC9D46 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF31960B21A1325E00BC9D46 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31960A21A1325E00BC9D46 /* DetailController.swift */; };
+		BF31960D21A134FE00BC9D46 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31960C21A134FE00BC9D46 /* TableViewController.swift */; };
+		BF54C7B621797883007AC284 /* Acceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54C7B32179602B007AC284 /* Acceleration.swift */; };
+		BF5B12E12192BB830012B8EC /* BreathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5B12E02192BB830012B8EC /* BreathController.swift */; };
+		BF723A39219FAE88007E99AA /* CompressionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF723A38219FAE88007E99AA /* CompressionWrapper.swift */; };
+		BF723A3B219FB4A1007E99AA /* BreathWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF723A3A219FB4A1007E99AA /* BreathWrapper.swift */; };
+		BF723A3D219FB8D5007E99AA /* CPRWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF723A3C219FB8D5007E99AA /* CPRWrapper.swift */; };
+		BF79B1EC21900599008E879A /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79B1EB21900599008E879A /* Distance.swift */; };
+		BF79B1EE21900BC1008E879A /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79B1ED21900BC1008E879A /* Pace.swift */; };
+		BF79B1F0219012A6008E879A /* Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79B1EF219012A6008E879A /* Depth.swift */; };
+		BF86A8D321A1F313007AA9B9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86A8D221A1F313007AA9B9 /* TableViewCell.swift */; };
+		BF86A8D621A1F7DD007AA9B9 /* CPRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86A8D521A1F7DD007AA9B9 /* CPRData.swift */; };
+		BF86A8D821A22DC7007AA9B9 /* DataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86A8D721A22DC7007AA9B9 /* DataCollector.swift */; };
+		BFA4ABD8217D1C8200F0AA6F /* Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4ABD7217D1C8200F0AA6F /* Velocity.swift */; };
+		BFB8CD1B2195698D00D3278E /* TutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB8CD192195698D00D3278E /* TutorialController.swift */; };
+		BFC850232198CBB10014C2BD /* SelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC850222198CBB10014C2BD /* SelectController.swift */; };
+		BFCAFA9121706926004C7A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAFA9021706926004C7A29 /* AppDelegate.swift */; };
+		BFCAFA9321706926004C7A29 /* CompressionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAFA9221706926004C7A29 /* CompressionController.swift */; };
+		BFCAFA9621706926004C7A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCAFA9421706926004C7A29 /* Main.storyboard */; };
+		BFCAFA9821706927004C7A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCAFA9721706927004C7A29 /* Assets.xcassets */; };
+		BFCAFA9B21706927004C7A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCAFA9921706927004C7A29 /* LaunchScreen.storyboard */; };
+		BFCAFAA621706927004C7A29 /* CprAidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAFAA521706927004C7A29 /* CprAidTests.swift */; };
+		BFCAFAAB21706927004C7A29 /* CprAid WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BFCAFAAA21706927004C7A29 /* CprAid WatchKit App.app */; };
+		BFCAFAB121706927004C7A29 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCAFAAF21706927004C7A29 /* Interface.storyboard */; };
+		BFCAFAB321706928004C7A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCAFAB221706928004C7A29 /* Assets.xcassets */; };
+		BFCAFABA21706928004C7A29 /* CprAid WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BFCAFAB921706928004C7A29 /* CprAid WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BFCAFABF21706928004C7A29 /* CompressionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAFABE21706928004C7A29 /* CompressionController.swift */; };
+		BFCAFAC121706928004C7A29 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAFAC021706928004C7A29 /* ExtensionDelegate.swift */; };
+		BFCAFAC321706928004C7A29 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAFAC221706928004C7A29 /* NotificationController.swift */; };
+		BFCAFAC521706929004C7A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCAFAC421706929004C7A29 /* Assets.xcassets */; };
+		BFD515692197749900AE2FA1 /* SelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD515682197749900AE2FA1 /* SelectController.swift */; };
+		BFD5156B219774AF00AE2FA1 /* TutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5156A219774AF00AE2FA1 /* TutorialController.swift */; };
+		BFD5156D219774C400AE2FA1 /* LoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5156C219774C400AE2FA1 /* LoadingController.swift */; };
+		BFD5156F219774D500AE2FA1 /* BreathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5156E219774D500AE2FA1 /* BreathController.swift */; };
+		BFF96D5A219C077D00AAAB25 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF96D59219C077D00AAAB25 /* HealthKit.framework */; };
+		BFF96D5D219C079000AAAB25 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF96D5C219C079000AAAB25 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF3195FC21A12F0000BC9D46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF3195F721A12F0000BC9D46 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		BF3195FE21A12F0000BC9D46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF3195F721A12F0000BC9D46 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		BF31960721A1301700BC9D46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF3195F721A12F0000BC9D46 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+		BFCAFAA221706927004C7A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCAFA8521706926004C7A29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCAFA8C21706926004C7A29;
+			remoteInfo = CprAid;
+		};
+		BFCAFAAC21706927004C7A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCAFA8521706926004C7A29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCAFAA921706927004C7A29;
+			remoteInfo = "CprAid WatchKit App";
+		};
+		BFCAFABB21706928004C7A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCAFA8521706926004C7A29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCAFAB821706928004C7A29;
+			remoteInfo = "CprAid WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF31960921A1301700BC9D46 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF31960621A1301700BC9D46 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFACD21706929004C7A29 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BFCAFABA21706928004C7A29 /* CprAid WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFAD121706929004C7A29 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BFCAFAAB21706927004C7A29 /* CprAid WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF3195F721A12F0000BC9D46 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		BF31960A21A1325E00BC9D46 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		BF31960C21A134FE00BC9D46 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BF54C7B32179602B007AC284 /* Acceleration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acceleration.swift; sourceTree = "<group>"; };
+		BF5B12E02192BB830012B8EC /* BreathController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathController.swift; sourceTree = "<group>"; };
+		BF723A38219FAE88007E99AA /* CompressionWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionWrapper.swift; sourceTree = "<group>"; };
+		BF723A3A219FB4A1007E99AA /* BreathWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathWrapper.swift; sourceTree = "<group>"; };
+		BF723A3C219FB8D5007E99AA /* CPRWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRWrapper.swift; sourceTree = "<group>"; };
+		BF79B1EB21900599008E879A /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		BF79B1ED21900BC1008E879A /* Pace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pace.swift; sourceTree = "<group>"; };
+		BF79B1EF219012A6008E879A /* Depth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depth.swift; sourceTree = "<group>"; };
+		BF86A8D221A1F313007AA9B9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BF86A8D521A1F7DD007AA9B9 /* CPRData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRData.swift; sourceTree = "<group>"; };
+		BF86A8D721A22DC7007AA9B9 /* DataCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollector.swift; sourceTree = "<group>"; };
+		BFA4ABD7217D1C8200F0AA6F /* Velocity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velocity.swift; sourceTree = "<group>"; };
+		BFB8CD192195698D00D3278E /* TutorialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialController.swift; sourceTree = "<group>"; };
+		BFC850222198CBB10014C2BD /* SelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectController.swift; sourceTree = "<group>"; };
+		BFCAFA8D21706926004C7A29 /* CprAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CprAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCAFA9021706926004C7A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFCAFA9221706926004C7A29 /* CompressionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionController.swift; sourceTree = "<group>"; };
+		BFCAFA9521706926004C7A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFCAFA9721706927004C7A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFCAFA9A21706927004C7A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFCAFA9C21706927004C7A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCAFAA121706927004C7A29 /* CprAidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CprAidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCAFAA521706927004C7A29 /* CprAidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CprAidTests.swift; sourceTree = "<group>"; };
+		BFCAFAA721706927004C7A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCAFAAA21706927004C7A29 /* CprAid WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CprAid WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCAFAB021706927004C7A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BFCAFAB221706928004C7A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFCAFAB421706928004C7A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCAFAB921706928004C7A29 /* CprAid WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CprAid WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCAFABE21706928004C7A29 /* CompressionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionController.swift; sourceTree = "<group>"; };
+		BFCAFAC021706928004C7A29 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BFCAFAC221706928004C7A29 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BFCAFAC421706929004C7A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFCAFAC621706929004C7A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCAFAC721706929004C7A29 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BFD515682197749900AE2FA1 /* SelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectController.swift; sourceTree = "<group>"; };
+		BFD5156A219774AF00AE2FA1 /* TutorialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialController.swift; sourceTree = "<group>"; };
+		BFD5156C219774C400AE2FA1 /* LoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingController.swift; sourceTree = "<group>"; };
+		BFD5156E219774D500AE2FA1 /* BreathController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathController.swift; sourceTree = "<group>"; };
+		BFF96D58219C077D00AAAB25 /* CprAid WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CprAid WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		BFF96D59219C077D00AAAB25 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		BFF96D5B219C079000AAAB25 /* CprAid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CprAid.entitlements; sourceTree = "<group>"; };
+		BFF96D5C219C079000AAAB25 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFCAFA8A21706926004C7A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF96D5D219C079000AAAB25 /* HealthKit.framework in Frameworks */,
+				BF31960521A1301700BC9D46 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFA9E21706927004C7A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFAB621706928004C7A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF96D5A219C077D00AAAB25 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF3195F821A12F0000BC9D46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF3195FD21A12F0000BC9D46 /* Charts.framework */,
+				BF3195FF21A12F0000BC9D46 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF54C7AB217959EC007AC284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF96D5C219C079000AAAB25 /* HealthKit.framework */,
+				BFF96D59219C077D00AAAB25 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFCAFA8421706926004C7A29 = {
+			isa = PBXGroup;
+			children = (
+				BF3195F721A12F0000BC9D46 /* Charts.xcodeproj */,
+				BFCAFA8F21706926004C7A29 /* CprAid */,
+				BFCAFAA421706927004C7A29 /* CprAidTests */,
+				BFCAFAAE21706927004C7A29 /* CprAid WatchKit App */,
+				BFCAFABD21706928004C7A29 /* CprAid WatchKit Extension */,
+				BFCAFA8E21706926004C7A29 /* Products */,
+				BF54C7AB217959EC007AC284 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFCAFA8E21706926004C7A29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFCAFA8D21706926004C7A29 /* CprAid.app */,
+				BFCAFAA121706927004C7A29 /* CprAidTests.xctest */,
+				BFCAFAAA21706927004C7A29 /* CprAid WatchKit App.app */,
+				BFCAFAB921706928004C7A29 /* CprAid WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFCAFA8F21706926004C7A29 /* CprAid */ = {
+			isa = PBXGroup;
+			children = (
+				BFF96D5B219C079000AAAB25 /* CprAid.entitlements */,
+				BFCAFA9021706926004C7A29 /* AppDelegate.swift */,
+				BFCAFA9221706926004C7A29 /* CompressionController.swift */,
+				BFD515682197749900AE2FA1 /* SelectController.swift */,
+				BFD5156A219774AF00AE2FA1 /* TutorialController.swift */,
+				BFD5156C219774C400AE2FA1 /* LoadingController.swift */,
+				BFD5156E219774D500AE2FA1 /* BreathController.swift */,
+				BFCAFA9421706926004C7A29 /* Main.storyboard */,
+				BF86A8D221A1F313007AA9B9 /* TableViewCell.swift */,
+				BF31960C21A134FE00BC9D46 /* TableViewController.swift */,
+				BFCAFA9721706927004C7A29 /* Assets.xcassets */,
+				BFCAFA9921706927004C7A29 /* LaunchScreen.storyboard */,
+				BFCAFA9C21706927004C7A29 /* Info.plist */,
+				BF31960A21A1325E00BC9D46 /* DetailController.swift */,
+				BF86A8D521A1F7DD007AA9B9 /* CPRData.swift */,
+				BF86A8D721A22DC7007AA9B9 /* DataCollector.swift */,
+			);
+			path = CprAid;
+			sourceTree = "<group>";
+		};
+		BFCAFAA421706927004C7A29 /* CprAidTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFCAFAA521706927004C7A29 /* CprAidTests.swift */,
+				BFCAFAA721706927004C7A29 /* Info.plist */,
+			);
+			path = CprAidTests;
+			sourceTree = "<group>";
+		};
+		BFCAFAAE21706927004C7A29 /* CprAid WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BFCAFAAF21706927004C7A29 /* Interface.storyboard */,
+				BFCAFAB221706928004C7A29 /* Assets.xcassets */,
+				BFCAFAB421706928004C7A29 /* Info.plist */,
+			);
+			path = "CprAid WatchKit App";
+			sourceTree = "<group>";
+		};
+		BFCAFABD21706928004C7A29 /* CprAid WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BFF96D58219C077D00AAAB25 /* CprAid WatchKit Extension.entitlements */,
+				BFB8CD192195698D00D3278E /* TutorialController.swift */,
+				BFCAFABE21706928004C7A29 /* CompressionController.swift */,
+				BF723A38219FAE88007E99AA /* CompressionWrapper.swift */,
+				BF723A3A219FB4A1007E99AA /* BreathWrapper.swift */,
+				BF723A3C219FB8D5007E99AA /* CPRWrapper.swift */,
+				BF5B12E02192BB830012B8EC /* BreathController.swift */,
+				BFC850222198CBB10014C2BD /* SelectController.swift */,
+				BF79B1EF219012A6008E879A /* Depth.swift */,
+				BF79B1ED21900BC1008E879A /* Pace.swift */,
+				BF79B1EB21900599008E879A /* Distance.swift */,
+				BF54C7B32179602B007AC284 /* Acceleration.swift */,
+				BFA4ABD7217D1C8200F0AA6F /* Velocity.swift */,
+				BFCAFAC021706928004C7A29 /* ExtensionDelegate.swift */,
+				BFCAFAC221706928004C7A29 /* NotificationController.swift */,
+				BFCAFAC421706929004C7A29 /* Assets.xcassets */,
+				BFCAFAC621706929004C7A29 /* Info.plist */,
+				BFCAFAC721706929004C7A29 /* PushNotificationPayload.apns */,
+			);
+			path = "CprAid WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFCAFA8C21706926004C7A29 /* CprAid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCAFAD221706929004C7A29 /* Build configuration list for PBXNativeTarget "CprAid" */;
+			buildPhases = (
+				BFCAFA8921706926004C7A29 /* Sources */,
+				BFCAFA8A21706926004C7A29 /* Frameworks */,
+				BFCAFA8B21706926004C7A29 /* Resources */,
+				BFCAFAD121706929004C7A29 /* Embed Watch Content */,
+				BF31960921A1301700BC9D46 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCAFAAD21706927004C7A29 /* PBXTargetDependency */,
+				BF31960821A1301700BC9D46 /* PBXTargetDependency */,
+			);
+			name = CprAid;
+			productName = CprAid;
+			productReference = BFCAFA8D21706926004C7A29 /* CprAid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFCAFAA021706927004C7A29 /* CprAidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCAFAD521706929004C7A29 /* Build configuration list for PBXNativeTarget "CprAidTests" */;
+			buildPhases = (
+				BFCAFA9D21706927004C7A29 /* Sources */,
+				BFCAFA9E21706927004C7A29 /* Frameworks */,
+				BFCAFA9F21706927004C7A29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCAFAA321706927004C7A29 /* PBXTargetDependency */,
+			);
+			name = CprAidTests;
+			productName = CprAidTests;
+			productReference = BFCAFAA121706927004C7A29 /* CprAidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFCAFAA921706927004C7A29 /* CprAid WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCAFACE21706929004C7A29 /* Build configuration list for PBXNativeTarget "CprAid WatchKit App" */;
+			buildPhases = (
+				BFCAFAA821706927004C7A29 /* Resources */,
+				BFCAFACD21706929004C7A29 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCAFABC21706928004C7A29 /* PBXTargetDependency */,
+			);
+			name = "CprAid WatchKit App";
+			productName = "CprAid WatchKit App";
+			productReference = BFCAFAAA21706927004C7A29 /* CprAid WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BFCAFAB821706928004C7A29 /* CprAid WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCAFACA21706929004C7A29 /* Build configuration list for PBXNativeTarget "CprAid WatchKit Extension" */;
+			buildPhases = (
+				BFCAFAB521706928004C7A29 /* Sources */,
+				BFCAFAB621706928004C7A29 /* Frameworks */,
+				BFCAFAB721706928004C7A29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CprAid WatchKit Extension";
+			productName = "CprAid WatchKit Extension";
+			productReference = BFCAFAB921706928004C7A29 /* CprAid WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFCAFA8521706926004C7A29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Daniel Greenberg";
+				TargetAttributes = {
+					BFCAFA8C21706926004C7A29 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					BFCAFAA021706927004C7A29 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = BFCAFA8C21706926004C7A29;
+					};
+					BFCAFAA921706927004C7A29 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					BFCAFAB821706928004C7A29 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BFCAFA8821706926004C7A29 /* Build configuration list for PBXProject "CprAid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFCAFA8421706926004C7A29;
+			productRefGroup = BFCAFA8E21706926004C7A29 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BF3195F821A12F0000BC9D46 /* Products */;
+					ProjectRef = BF3195F721A12F0000BC9D46 /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BFCAFA8C21706926004C7A29 /* CprAid */,
+				BFCAFAA021706927004C7A29 /* CprAidTests */,
+				BFCAFAA921706927004C7A29 /* CprAid WatchKit App */,
+				BFCAFAB821706928004C7A29 /* CprAid WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BF3195FD21A12F0000BC9D46 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = BF3195FC21A12F0000BC9D46 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF3195FF21A12F0000BC9D46 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = BF3195FE21A12F0000BC9D46 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFCAFA8B21706926004C7A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCAFA9B21706927004C7A29 /* LaunchScreen.storyboard in Resources */,
+				BFCAFA9821706927004C7A29 /* Assets.xcassets in Resources */,
+				BFCAFA9621706926004C7A29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFA9F21706927004C7A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFAA821706927004C7A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCAFAB321706928004C7A29 /* Assets.xcassets in Resources */,
+				BFCAFAB121706927004C7A29 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFAB721706928004C7A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCAFAC521706929004C7A29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFCAFA8921706926004C7A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCAFA9321706926004C7A29 /* CompressionController.swift in Sources */,
+				BFD5156F219774D500AE2FA1 /* BreathController.swift in Sources */,
+				BFCAFA9121706926004C7A29 /* AppDelegate.swift in Sources */,
+				BF86A8D321A1F313007AA9B9 /* TableViewCell.swift in Sources */,
+				BF31960D21A134FE00BC9D46 /* TableViewController.swift in Sources */,
+				BF86A8D621A1F7DD007AA9B9 /* CPRData.swift in Sources */,
+				BFD515692197749900AE2FA1 /* SelectController.swift in Sources */,
+				BFD5156B219774AF00AE2FA1 /* TutorialController.swift in Sources */,
+				BF86A8D821A22DC7007AA9B9 /* DataCollector.swift in Sources */,
+				BF31960B21A1325E00BC9D46 /* DetailController.swift in Sources */,
+				BFD5156D219774C400AE2FA1 /* LoadingController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFA9D21706927004C7A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCAFAA621706927004C7A29 /* CprAidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCAFAB521706928004C7A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF723A3B219FB4A1007E99AA /* BreathWrapper.swift in Sources */,
+				BF723A3D219FB8D5007E99AA /* CPRWrapper.swift in Sources */,
+				BF54C7B621797883007AC284 /* Acceleration.swift in Sources */,
+				BF5B12E12192BB830012B8EC /* BreathController.swift in Sources */,
+				BF723A39219FAE88007E99AA /* CompressionWrapper.swift in Sources */,
+				BFCAFAC321706928004C7A29 /* NotificationController.swift in Sources */,
+				BF79B1EC21900599008E879A /* Distance.swift in Sources */,
+				BFCAFAC121706928004C7A29 /* ExtensionDelegate.swift in Sources */,
+				BFA4ABD8217D1C8200F0AA6F /* Velocity.swift in Sources */,
+				BFB8CD1B2195698D00D3278E /* TutorialController.swift in Sources */,
+				BFCAFABF21706928004C7A29 /* CompressionController.swift in Sources */,
+				BFC850232198CBB10014C2BD /* SelectController.swift in Sources */,
+				BF79B1EE21900BC1008E879A /* Pace.swift in Sources */,
+				BF79B1F0219012A6008E879A /* Depth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF31960821A1301700BC9D46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = BF31960721A1301700BC9D46 /* PBXContainerItemProxy */;
+		};
+		BFCAFAA321706927004C7A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCAFA8C21706926004C7A29 /* CprAid */;
+			targetProxy = BFCAFAA221706927004C7A29 /* PBXContainerItemProxy */;
+		};
+		BFCAFAAD21706927004C7A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCAFAA921706927004C7A29 /* CprAid WatchKit App */;
+			targetProxy = BFCAFAAC21706927004C7A29 /* PBXContainerItemProxy */;
+		};
+		BFCAFABC21706928004C7A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCAFAB821706928004C7A29 /* CprAid WatchKit Extension */;
+			targetProxy = BFCAFABB21706928004C7A29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFCAFA9421706926004C7A29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFCAFA9521706926004C7A29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFCAFA9921706927004C7A29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFCAFA9A21706927004C7A29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BFCAFAAF21706927004C7A29 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFCAFAB021706927004C7A29 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFCAFAC821706929004C7A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFCAFAC921706929004C7A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFCAFACB21706929004C7A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "CprAid WatchKit Extension/CprAid WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B35649RJAW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "CprAid WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CprAid.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		BFCAFACC21706929004C7A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "CprAid WatchKit Extension/CprAid WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B35649RJAW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "CprAid WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CprAid.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		BFCAFACF21706929004C7A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B35649RJAW;
+				IBSC_MODULE = CprAid_WatchKit_Extension;
+				INFOPLIST_FILE = "CprAid WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CprAid.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		BFCAFAD021706929004C7A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B35649RJAW;
+				IBSC_MODULE = CprAid_WatchKit_Extension;
+				INFOPLIST_FILE = "CprAid WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CprAid.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		BFCAFAD321706929004C7A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CprAid/CprAid.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B35649RJAW;
+				INFOPLIST_FILE = CprAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CprAid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFCAFAD421706929004C7A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CprAid/CprAid.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B35649RJAW;
+				INFOPLIST_FILE = CprAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CprAid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFCAFAD621706929004C7A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B35649RJAW;
+				INFOPLIST_FILE = CprAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CprAidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CprAid.app/CprAid";
+			};
+			name = Debug;
+		};
+		BFCAFAD721706929004C7A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B35649RJAW;
+				INFOPLIST_FILE = CprAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CprAidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CprAid.app/CprAid";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFCAFA8821706926004C7A29 /* Build configuration list for PBXProject "CprAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCAFAC821706929004C7A29 /* Debug */,
+				BFCAFAC921706929004C7A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCAFACA21706929004C7A29 /* Build configuration list for PBXNativeTarget "CprAid WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCAFACB21706929004C7A29 /* Debug */,
+				BFCAFACC21706929004C7A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCAFACE21706929004C7A29 /* Build configuration list for PBXNativeTarget "CprAid WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCAFACF21706929004C7A29 /* Debug */,
+				BFCAFAD021706929004C7A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCAFAD221706929004C7A29 /* Build configuration list for PBXNativeTarget "CprAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCAFAD321706929004C7A29 /* Debug */,
+				BFCAFAD421706929004C7A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCAFAD521706929004C7A29 /* Build configuration list for PBXNativeTarget "CprAidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCAFAD621706929004C7A29 /* Debug */,
+				BFCAFAD721706929004C7A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFCAFA8521706926004C7A29 /* Project object */;
+}
